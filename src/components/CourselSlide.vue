@@ -5,10 +5,10 @@
         <img src="/cat2.webp" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="/cat2.webp" class="d-block w-100" alt="...">
+        <img src="/cat.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="/cat2.webp" class="d-block w-100 img-fluid" alt="...">
+        <img src="/mute-swan.jpg" class="d-block w-100 img-fluid" alt="...">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -25,6 +25,5 @@
 <style scoped>
 .carousel-custom {
   max-width: 600px;
-  align-items: center;
 }
 </style>
