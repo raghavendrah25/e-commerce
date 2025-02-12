@@ -26,13 +26,13 @@
           </li>
         </ul>
       </div>
-      <h3 class="mb-0">PET E-Commerce</h3>
+      <h3 class="display-7">PET E-Commerce</h3>
     </div>
   </nav>
 </template>
 
 <script setup>
-import UserIcon from './Usericons.vue'
+import UserIcon from './UserIcons.vue'
 import CartIcon from './CartIcons.vue'
 </script>
 
@@ -50,9 +50,5 @@ import CartIcon from './CartIcons.vue'
 
 .navbar-brand img {
   margin-right: 10px;
-}
-
-.mb-0 {
-  margin-right: 20px; /* Adds some space from the right */
 }
 </style>
