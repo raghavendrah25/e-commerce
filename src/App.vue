@@ -15,7 +15,7 @@ import ProductThumbnail from './components/ProductThumbnail.vue'
     <h3 class="mt-3 text-center">Popular products</h3>
     <div class="row">
       <div class="col-12 col-md-3 d-flex justify-content-center mt-3">
-        <ProductThumbnail price="100 Rupees" title="Product Name" />
+        <ProductThumbnail price="100 Rupees" title="Product Name" additionalInfo="Sold Out"/>
       </div>
       <div class="col-12 col-md-3 d-flex justify-content-center mt-3">
         <ProductThumbnail price="90 Rupees" title="Product Name 2"/>
@@ -25,9 +25,6 @@ import ProductThumbnail from './components/ProductThumbnail.vue'
       </div>
       <div class="col-12 col-md-3 d-flex justify-content-center mt-3">
         <ProductThumbnail  price="70 Rupees" title="Product Name 4"/>
-      </div>
-      <div class="col-12 col-md-3 d-flex justify-content-center mt-3">
-        <ProductThumbnail  price="60 Rupees" title="Product Name 5"/>
       </div>
     </div>
   </div>

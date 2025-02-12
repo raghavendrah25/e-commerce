@@ -4,6 +4,7 @@
   <div class="card-body">
     <h5 class="card-title">{{ title  }}</h5>
     <p class="card-text">{{ price }}</p>
+    <p>{{ additionalInfo }}</p>
   </div>
 </div>
 </template>
@@ -14,6 +15,10 @@ export default {
   props: {
     title: String,
     price: String,
+    additionalInfo: {
+      type: String,
+      default: "Limited Edition!"
+    }
   }
 }
 </script>
