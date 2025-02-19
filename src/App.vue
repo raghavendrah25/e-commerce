@@ -1,9 +1,3 @@
-<script setup>
-import CourselSlide from './components/CourselSlide.vue';
-import NavBar from './components/NavBar.vue'
-import ProductThumbnail from './components/ProductThumbnail.vue'
-</script>
-
 <template>
   <NavBar />
   <div class="container">
@@ -29,6 +23,37 @@ import ProductThumbnail from './components/ProductThumbnail.vue'
     </div>
   </div>
 </template>
+
+<script>
+import CourselSlide from './components/CourselSlide.vue';
+import NavBar from './components/NavBar.vue'
+import ProductThumbnail from './components/ProductThumbnail.vue'
+import webservice from './webservice';
+
+export default {
+  name: 'App',
+  components: {
+    ProductThumbnail,
+    CourselSlide,
+    NavBar
+
+  },
+  created() {
+    webservice.getProducts().then((response) => {
+      alert(response.data);
+    }).catch((error) => {
+      alert(error);
+    });
+
+    webservice.getCategory().then((response) => {
+      alert(response.data);
+    }).catch((error) => {
+      alert(error);
+    });
+  }
+}
+</script>
+
 
 <style scoped>
 </style>
