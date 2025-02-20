@@ -22,6 +22,14 @@
 </div>
 </template>
 
+
+<script>
+export default {
+  name: "CourselSlide",
+}
+</script>
+
+
 <style scoped>
 .carousel-custom {
   max-width: 600px;

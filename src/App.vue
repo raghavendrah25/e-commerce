@@ -1,17 +1,17 @@
 <template>
   <NavBar />
-  <div class="container">
-    <div class="row align-items-center">
+  <div class="container text-center">
+    <div class="row justify-content-center align-items-center">
       <div class="col-12 d-flex justify-content-center">
         <CourselSlide />
       </div>
     </div>
     <h3 class="mt-3 text-center">Popular products</h3>
-    <div class="row">
+    <div class="row d-flex flex-wrap justify-content-center align-items-center mx-auto" style="max-width: 1200px;">
       <div
         v-for="product in products"
         v-bind:key="product.id"
-        class="col-12 col-md-3 d-flex justify-content-center mt-3"
+        class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-center mt-3"
       >
         <ProductThumbnail
           :price="product.totalPrice.display"
