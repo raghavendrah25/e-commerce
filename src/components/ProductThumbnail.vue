@@ -1,24 +1,22 @@
 <template>
-  <div class="card" style="width: 12rem;">
-  <img src="/cat.svg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">{{ title  }}</h5>
-    <p class="card-text">{{ price }}</p>
-    <p>{{ additionalInfo }}</p>
+  <div class="card" style="width: 12rem">
+    <img :src="imageUrl" class="card-img-top" alt="Product Image" />
+    <div class="card-body">
+      <h5 class="card-title">{{ title }}</h5>
+      <p class="card-text">{{ price }}</p>
+      <p>{{ additionalInfo }}</p>
+    </div>
   </div>
-</div>
 </template>
 
 <script>
 export default {
-  name: "ProductThumbnail",
+  name: 'ProductThumbnail',
   props: {
     title: String,
     price: String,
-    additionalInfo: {
-      type: String,
-      default: "Limited Edition!"
-    }
-  }
+    additionalInfo: String,
+    imageUrl: String,
+  },
 }
 </script>
